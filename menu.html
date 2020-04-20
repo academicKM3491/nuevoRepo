@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        nav ul li{
+            list-style: none;
+            float: left;
+            /* display: inline-block; */
+            /* display: block;
+            float:left; */
+            margin: 4px;
+            padding: 10px;
+            position: relative;
+            background-color: grey;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        nav ul li ul li{
+            clear:both;
+            display: none;
+        }
+
+        nav ul li:hover > ul li{
+            margin: 0px;
+            right: 50%;
+            display: block;
+            line-height: 100%; /*altura de la línea base*/
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="prod.html">Producto</a>
+                <ul>
+                    <li>Blusas</li>
+                    <li>Pantalones</li>
+                </ul>
+            </li>
+            <li><a href="con.html">Contacto</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
